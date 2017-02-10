@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h1 id="greeting"> HELLO</h1>
+  <div class="nav">
+    <ul>
+      <li> <a href="#">Google</a></li>
+      <li> <a href="#">Facebook</a></li>
+    </ul>
+
+
+  </div>
+
+<script>
+//var greet = document.getElementById('greeting');
+
+//greet.addEventListener('mouseover', function(e) {
+  //greet.textContent = 'goodbye';
+//});
+
+
+var navigation = document.getElementsByClassName('nav');
+
+
+var navChild = navigation[0].children[0].children[0].children[0];
+
+navChild.textContent = 'ESPN'
+
+console.log(navChild);
+</script>
+
+
+</body>
+</html>
