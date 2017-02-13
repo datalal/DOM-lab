@@ -1,29 +1,20 @@
-.foodForm{
-
-background-color: grey;
-width: 430px;
-padding: 5px;
-
+.foodForm {
+    background-color: grey;
+    width: 430px;
+    padding: 5px;
 }
 
-.cartContainer{
-
-background-color: #666666;
-width: 430px;
-padding: 5px;
-
-
+.cartContainer {
+    background-color: #666666;
+    width: 430px;
+    padding: 5px;
 }
 
-.totalPrice{
-
-background-color: black;
-color: white;
-
+.totalPrice {
+    background-color: black;
+    color: white;
 }
 
-.itemSlot{
-
-background-color: white;
-
+.itemSlot {
+    background-color: white;
 }

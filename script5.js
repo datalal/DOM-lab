@@ -1,6 +1,6 @@
 var total;
-  var newTotal;
-  var totalPrice = document.createElement("p");
+var newTotal;
+var totalPrice = document.createElement("p");
 
 var basket = [{
         name: 'Milk',
@@ -25,33 +25,32 @@ var basket = [{
     {
         name: 'Pizza',
         price: 20
+    },
+    {
+        name: 'More Pizza',
+        price: 60
     }
+
 ];
 
-function updateTotal(){
-total = 0;
+displayTotal();
+showCart();
+updateTotal();
 
-  for (i = 0; i < basket.length; i++) {
+function updateTotal() {
+    total = 0;
 
-      total += basket[i].price;
+    for (i = 0; i < basket.length; i++) {
 
-  };
-//   return total;
-// console.log(total);
-//   totalPrice.textContent = total;
+        total += basket[i].price;
+
+    };
 };
 
 
 function displayTotal() {
 
-  //
-  // for (i = 0; i < basket.length; i++) {
-  //
-  //     total += basket[i].price;
-  //
-  // };
-
-  newTotal = updateTotal();
+    updateTotal();
 
     totalPrice = document.createElement("p");
     totalPrice.textContent = "Total: $" + total;
@@ -79,11 +78,9 @@ function showCart() {
 
 };
 
+// displayTotal();
+// showCart();
 // updateTotal();
-
-displayTotal();
-showCart();
-updateTotal();
 
 
 function addItem() {
@@ -92,16 +89,10 @@ function addItem() {
     var newItem = document.getElementById("newItem").value;
     var newPrice = Number(document.getElementById("newPrice").value);
 
-    // var newObj = {
-    // name: newItem,
-    // price: newPrice};
-
     basket.push({
         name: newItem,
         price: newPrice
     });
-
-    // basket1.push(newObj);
 
     var itemSlot = document.createElement("p");
     itemSlot.textContent = newItem + " $" + newPrice;
